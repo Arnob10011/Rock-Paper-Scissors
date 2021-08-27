@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgb(4, 17, 51);
+}
+/* score */
+.score {
+  width: 110px;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 3rem;
+  color: rgb(51, 37, 37);
+  text-align: center;
+  background: #fff;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  width: 658px;
+  margin: 3rem auto;
+  border: 1px solid #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+/* game */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.game-section {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: url("./images/triangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Rock {
+  margin-right: 1.5rem;
+}
+#Paper {
+  margin-left: 1.5rem;
+}
+.hand {
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.hand:hover {
+  transform: scale(1.1);
+}
+/* result */
+
+.result {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.result-section {
+  display: flex;
+  color: #fff;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  gap: 5rem;
+}
+
+.referee__content {
+  font-size: 3rem;
+}
+.referee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.play--again {
+  background: #fff;
+  color: rgb(2, 5, 39);
+  padding: 1.5rem 2.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.play--again:hover {
+  transform: translateY(-7px);
+}
+.me p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.robot p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}

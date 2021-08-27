@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Rock Paper Scissers</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- score -->
+      <div class="score-board">
+        <div class="title">
+          <img src="./images/title.png" />
+        </div>
+        <div class="score">0</div>
+      </div>
+      <!-- game -->
+      <div class="game">
+        <div class="game-section">
+          <div class="hand">
+            <img id="Rock" src="./images/Rock.png" />
+          </div>
+
+          <div class="hand">
+            <img id="Paper" src="./images/Paper.png" />
+          </div>
+
+          <div class="hand">
+            <img id="Scissors" src="./images/Scissors.png" />
+          </div>
+        </div>
+      </div>
+      <!-- result section -->
+      <div class="result">
+        <div class="result-section">
+          <div class="me">
+            <p>Your Pick</p>
+            <img src="./images/Rock.png" />
+          </div>
+
+          <div class="referee">
+            <div class="referee__content">You Won</div>
+
+            <div class="play--again">Play Again</div>
+          </div>
+          <div class="robot">
+            <p>Robot's Pick</p>
+            <img src="./images/Scissors.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
